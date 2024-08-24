@@ -15,7 +15,7 @@ let middle: usize = n_elements /2;
 
 let med: f32 = if n_elements % 2 == 0{
     //even
-    0.0
+    (a[middle - 1] + a[middle]) / 2.0
 }else{
     //odd
     a[middle] 
@@ -63,7 +63,7 @@ fn empty_list(){
 
 
 #[test]
-fn sorted_list(){
+fn even_lenght(){
     let input: Vec<f32> = vec![1.0, 2.0, 3.0];
 
     let expected_output:Option<f32> = Some(2.0);
@@ -72,6 +72,15 @@ fn sorted_list(){
     assert_eq!(expected_output, actual_output);
 }
 
-//even_lenght
+#[test]
+
+fn sorted_list(){
+    let input: Vec<f32> = vec![3.0, 2.0,2.0, 2.0];
+
+    let expected_output:Option<f32> = Some(2.0);
+    let actual_output:Option<f32> = median(input);
+
+    assert_eq!(expected_output, actual_output);
+}
 
 //unsorted_list
