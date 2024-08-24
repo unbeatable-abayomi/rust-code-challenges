@@ -1,5 +1,5 @@
 
-fn median(a: Vec<f32>) -> Option<f32>{
+fn median(mut a: Vec<f32>) -> Option<f32>{
     // - empty
     // - odd number of elements in the list
     // - even number of elements in the list
@@ -8,6 +8,8 @@ if a.is_empty() {
     return None;
 }
 
+
+a.sort_by(|x: &f32, y: &f32| x.partial_cmp(y).unwrap());
 // TODO: sort
 
 let n_elements: usize = a.len();
@@ -64,7 +66,7 @@ fn empty_list(){
 
 #[test]
 fn even_lenght(){
-    let input: Vec<f32> = vec![1.0, 2.0, 3.0];
+    let input: Vec<f32> = vec![1.0, 2.0,2.0, 3.0];
 
     let expected_output:Option<f32> = Some(2.0);
     let actual_output:Option<f32> = median(input);
@@ -75,12 +77,19 @@ fn even_lenght(){
 #[test]
 
 fn sorted_list(){
-    let input: Vec<f32> = vec![3.0, 2.0,2.0, 2.0];
+    let input: Vec<f32> = vec![1.0, 2.0,3.0,4.0,5.0];
 
-    let expected_output:Option<f32> = Some(2.0);
+    let expected_output:Option<f32> = Some(3.0);
     let actual_output:Option<f32> = median(input);
 
     assert_eq!(expected_output, actual_output);
 }
 
-//unsorted_list
+
+#[test]
+fn unsorted_list() {
+    let input = vec![3.0, 5.0, 2.0];
+    let expected_output = Some(3.0);
+    let actual_output = median(input);
+    assert_eq!(actual_output, expected_output);
+}
