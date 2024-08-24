@@ -1,9 +1,49 @@
 
 fn median(a: Vec<f32>) -> Option<f32>{
-    todo!();
+    // - empty
+    // - odd number of elements in the list
+    // - even number of elements in the list
+
+if a.is_empty() {
+    return None;
+}
+
+// TODO: sort
+
+let n_elements: usize = a.len();
+let middle: usize = n_elements /2;
+
+let med: f32 = if n_elements % 2 == 0{
+    //even
+    0.0
+}else{
+    //odd
+    a[middle] 
+};
+
+Some(med)
+    // let len = a.len();
+    // if len == 0 {
+    //     return None;
+    // }
+
+
+
+    // let mut sorted_list = a.clone();
+    // sorted_list.sort_unstable();
+
+    // match len % 2 {
+    //     0 => {
+    //         let mid1 = len / 2;
+    //         let mid2 = mid1 - 1;
+    //         Some((sorted_list[mid1] + sorted_list[mid2]) / 2.0)
+    //     }
+    //     1 => Some(sorted_list[len / 2]),
+    //     _ => None,
+    // }
 }
 fn main() {
-    println!("Hello, world!");
+
 
     let answer: Option<f32>  = median(vec![1.0, 2.0, 5.0]);
 
@@ -31,3 +71,7 @@ fn sorted_list(){
 
     assert_eq!(expected_output, actual_output);
 }
+
+//even_lenght
+
+//unsorted_list
