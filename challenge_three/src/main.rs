@@ -2,7 +2,7 @@ fn info <T: std::fmt::Display>(a: &T) {
     println!("{}", a);
 }
 
-// fn info(a: &str) {
+// fn info(a: &String) {
 //     println!("{}", a);
 // }
 
@@ -10,12 +10,12 @@ fn info <T: std::fmt::Display>(a: &T) {
 
 
 fn main() {
-   let a : &str = "?";
-    //let b : &String = &"Hello,String".to_string();
+   //let a : &str = "?";
+    let b : String = "Hello,String".to_string();
     //let input : u32 = 200;
     //let vectord: String = "Hello";
     //info(&a);
-    info(&a);
+    info(&b);
     //info2(&vectord);
 
 }
