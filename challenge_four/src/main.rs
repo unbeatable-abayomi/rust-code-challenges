@@ -10,7 +10,7 @@ fn main() {
    let mut users : Vec<&str> = vec!["Todd","Amy","mike99","Jennifer","alison"];
    println!("unsorted: {:?}", &users);
    sort_usernames(&mut users);
-   println!("sorted: {:?}", &users);
+   println!("sorted: {:?}", &users );
 }
 
 #[test]
