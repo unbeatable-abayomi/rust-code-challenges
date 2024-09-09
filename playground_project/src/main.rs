@@ -39,8 +39,36 @@ fn main() {
    process_fuel(rocket_fuel,&mut rocket_fuel_string); // This is a copy because we're passing a copy of the value,Datatype here is also an interger an it's strored on the stack, which has an implicity copy 
 
     println!("Rocket fuel: {}, Rocket fuel String {}", rocket_fuel, rocket_fuel_string);
+
+
+    let planets = [1,2,3,4,5,6,7,8];// sorry pluto
+    let inner_planets_all: &[i32] = &planets[..4];
+    println!("inner_planets are {:?}", inner_planets_all);
+
+    let message = String::from("Greetings from Earth");
+    println!("message to you is {}",message);
+
+    let last_word = &message[15..15+5];
+    println!("Last word is {}", last_word);
+
+    let first_word = get_first_word(&message);
+    println!("First word is {}", first_word);
+
+
 }
 
+
+fn get_first_word(s: &String) -> &str{
+    let bytes = s.as_bytes();
+    for (index, &item) in bytes.iter().enumerate(){
+        if item == b' ' {
+            return &s[..index];
+        }
+    }
+     // Note 👍study this string slice
+     // As a rule fo thumb when writing functons to work with strings ,"without taking ownership, you should use the string slice datatype for the input and output parameters because it has the fexlibilty to also work with string references"
+    &s // no spaces found; input is a single word
+}
 
 fn process_fuel(mut propellent:i32, roc_string: &mut String)-> usize{
     propellent += 10;
@@ -66,3 +94,7 @@ fn process_fuel(mut propellent:i32, roc_string: &mut String)-> usize{
 
 //NOTE: Pls ==> 
 //You can't create a mutable refrence and any other references.
+
+
+//SLICE
+// Reference to a congtiguous section of a collection
