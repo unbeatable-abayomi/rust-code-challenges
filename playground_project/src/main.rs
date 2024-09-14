@@ -55,7 +55,11 @@ fn main() {
 
     let first_word = get_first_word(&message);
     println!("First word is {}", first_word);
-
+     
+     if env::args().len() <= 2{
+         println!("Please provide at least two arguments.");
+         return;
+     }
 
     for (index,argument ) in env::args().enumerate(){
         println!("Argument {} is: {}", index, argument);
