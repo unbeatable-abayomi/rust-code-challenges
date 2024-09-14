@@ -1,9 +1,17 @@
 
-
+use std::fs;
 use rand;
 use std::env;
 fn main() {
 
+    let file_content = fs::read_to_string("target/planets.txt").unwrap();
+    println!("{}", file_content);
+
+    let file_content2= fs::read("target/planets.txt").unwrap();
+    println!("{:#?}", file_content2);
+    for line in file_content.lines() {
+        println!("line is {}", line);
+    }
     let ran_numbers = rand::random::<f64>();
     //COPY AND MOVE ON DIFF DATA TYPES
     //Copying data on the stack occures implictly while copying data on the heap must be done explicitly, using the clone method instead.
