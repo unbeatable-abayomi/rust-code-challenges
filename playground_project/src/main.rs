@@ -1,8 +1,10 @@
 
 
-
+use rand;
+use std::env;
 fn main() {
 
+    let ran_numbers = rand::random::<f64>();
     //COPY AND MOVE ON DIFF DATA TYPES
     //Copying data on the stack occures implictly while copying data on the heap must be done explicitly, using the clone method instead.
     // Data stored on the Heap ==> Sring
@@ -53,6 +55,18 @@ fn main() {
 
     let first_word = get_first_word(&message);
     println!("First word is {}", first_word);
+
+
+    for (index,argument ) in env::args().enumerate(){
+        println!("Argument {} is: {}", index, argument);
+    }
+
+    let arg2 = env::args().nth(2).unwrap();
+    println!("Argument 2 is: {}", arg2);
+
+
+    let arg1 = env::args().nth(1).unwrap();
+    println!("Argument 1 is: {}", arg1);
 
 
 }
