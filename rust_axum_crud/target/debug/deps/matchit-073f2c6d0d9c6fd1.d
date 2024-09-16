@@ -1,0 +1,11 @@
+/home/abayomi/Projects/rust/rust_code_challenges/rust_axum_crud/target/debug/deps/libmatchit-073f2c6d0d9c6fd1.rmeta: /home/abayomi/.cargo/registry/src/index.crates.io-6f17d22bba15001f/matchit-0.7.3/src/lib.rs /home/abayomi/.cargo/registry/src/index.crates.io-6f17d22bba15001f/matchit-0.7.3/src/error.rs /home/abayomi/.cargo/registry/src/index.crates.io-6f17d22bba15001f/matchit-0.7.3/src/params.rs /home/abayomi/.cargo/registry/src/index.crates.io-6f17d22bba15001f/matchit-0.7.3/src/router.rs /home/abayomi/.cargo/registry/src/index.crates.io-6f17d22bba15001f/matchit-0.7.3/src/tree.rs
+
+/home/abayomi/Projects/rust/rust_code_challenges/rust_axum_crud/target/debug/deps/libmatchit-073f2c6d0d9c6fd1.rlib: /home/abayomi/.cargo/registry/src/index.crates.io-6f17d22bba15001f/matchit-0.7.3/src/lib.rs /home/abayomi/.cargo/registry/src/index.crates.io-6f17d22bba15001f/matchit-0.7.3/src/error.rs /home/abayomi/.cargo/registry/src/index.crates.io-6f17d22bba15001f/matchit-0.7.3/src/params.rs /home/abayomi/.cargo/registry/src/index.crates.io-6f17d22bba15001f/matchit-0.7.3/src/router.rs /home/abayomi/.cargo/registry/src/index.crates.io-6f17d22bba15001f/matchit-0.7.3/src/tree.rs
+
+/home/abayomi/Projects/rust/rust_code_challenges/rust_axum_crud/target/debug/deps/matchit-073f2c6d0d9c6fd1.d: /home/abayomi/.cargo/registry/src/index.crates.io-6f17d22bba15001f/matchit-0.7.3/src/lib.rs /home/abayomi/.cargo/registry/src/index.crates.io-6f17d22bba15001f/matchit-0.7.3/src/error.rs /home/abayomi/.cargo/registry/src/index.crates.io-6f17d22bba15001f/matchit-0.7.3/src/params.rs /home/abayomi/.cargo/registry/src/index.crates.io-6f17d22bba15001f/matchit-0.7.3/src/router.rs /home/abayomi/.cargo/registry/src/index.crates.io-6f17d22bba15001f/matchit-0.7.3/src/tree.rs
+
+/home/abayomi/.cargo/registry/src/index.crates.io-6f17d22bba15001f/matchit-0.7.3/src/lib.rs:
+/home/abayomi/.cargo/registry/src/index.crates.io-6f17d22bba15001f/matchit-0.7.3/src/error.rs:
+/home/abayomi/.cargo/registry/src/index.crates.io-6f17d22bba15001f/matchit-0.7.3/src/params.rs:
+/home/abayomi/.cargo/registry/src/index.crates.io-6f17d22bba15001f/matchit-0.7.3/src/router.rs:
+/home/abayomi/.cargo/registry/src/index.crates.io-6f17d22bba15001f/matchit-0.7.3/src/tree.rs:
