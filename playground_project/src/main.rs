@@ -1,9 +1,24 @@
 
 use std::fs;
+//use std::io::Write;
+use std::io::prelude::*;
 use rand;
 use std::env;
 fn main() {
 
+
+    //Writing into filesystem
+    let mut speech = String::new();
+    speech.push_str("Hello SIr\n");
+    speech.push_str("I am coming Home\n");
+    speech.push_str("Right now sir\n");
+
+    fs::write("target/speech.txt", speech).expect("Failed to write to file");
+
+let mut file = fs::OpenOptions::new().append(true).open("target/planets.txt").unwrap();
+file.write(b"\nPluto");
+
+    //Reading from filesystem
     let file_content = fs::read_to_string("target/planets.txt").unwrap();
     println!("{}", file_content);
 
